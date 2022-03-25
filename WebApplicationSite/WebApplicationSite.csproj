@@ -134,10 +134,25 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>JQueryModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\C__RefactorLog.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>JQueryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JQueryModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JQueryModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JQueryModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JQueryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JQueryModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JQueryModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -161,6 +176,10 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\Database1_new.mdf" />
+    <Content Include="App_Data\Database1_new_log.ldf">
+      <DependentUpon>Database1_new.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -169,6 +188,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\JQueryModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JQueryModel.edmx</DependentUpon>
+      <LastGenOutput>JQueryModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\JQueryModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JQueryModel.edmx</DependentUpon>
+      <LastGenOutput>JQueryModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -187,6 +216,13 @@
     </EntityDeploy>
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\JQueryModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JQueryModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\JQueryModel.edmx.diagram">
+      <DependentUpon>JQueryModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
