@@ -14,7 +14,7 @@ namespace WebApplicationSite.Controllers
     {
         private Database1Entities db = new Database1Entities();
 
-        // GET: Customers
+        
         public ActionResult Index()
         {
             return View(db.Customers.ToList());

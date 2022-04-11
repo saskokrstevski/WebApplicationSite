@@ -1,7 +1,44 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@*@{
+        ViewBag.Title = "About";
+    }
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+    <p>Use this area to provide additional information.</p>*@
+@*<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="test.aspx.cs" Inherits="MVC_5.test" >
+    <head runat="server">*@
+@*<script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#partial-load').load('/Views/Customers/Index');
+           //$('#partial-load').load('/Views/jQueryPartialViev');
+        });
+    </script>*@
+@*</head>*@
+@*<body>
+        <div id="partial-load"></div>
+    </body>*@
+@*</html>*@
+
+@model IEnumerable<WebApplicationSite.Models.Customer>
+
+
+<table class="table">
+    <tr>
+        <td valign="top"><b>@Html.DisplayNameFor(model => model.custId):</b></td>
+        <th>
+            @Html.DisplayNameFor(model => model.company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th></th>
+    </tr>
+</table>
